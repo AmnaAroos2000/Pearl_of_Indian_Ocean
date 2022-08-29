@@ -1,0 +1,998 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+                                    /*Navigation_Bar*/
+
+#navigate{
+    overflow: hidden;
+    background-color: rgb(23, 4, 59);
+    padding: 25px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+
+#navigate a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#navigate label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    border: 4px solid yellow;
+    margin-left: 20px;
+    color: white;
+}
+
+#navigate a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+#navi{
+    float: right;
+    margin-right: 25px;
+}
+
+                                                                /*Login_page*/
+
+#page1{
+    background: url(4.jpg) no-repeat;
+    background-size: cover;
+}
+
+.log{
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    position: fixed;
+    color: black;
+}
+
+.log h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.log p{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0px;
+    color: black;
+}
+
+.log input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 4px solid black;
+    outline: auto;
+    border-radius: 5px;
+}
+
+.log button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 80px;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 5px;
+    background-color: brown;
+    border: 2px solid black;
+}
+
+                                                       /*Home_Page_Setup*/
+
+.play video{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.play h1{
+    color: rgb(4, 3, 66);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.play h2{
+    color: rgb(4, 9, 78);
+    text-align: center;
+    margin-top: 20%;
+    font-size: 40px;
+   
+}
+
+.play p{
+    color: rgb(3, 4, 73);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.play button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 50px 590px;
+    padding: 10px 10px;
+    width: 13%;
+    border-radius: 5px;
+    background-color: rgb(200, 241, 15);
+    border: 2px solid rgb(66, 3, 3);
+   
+}
+
+.play button a{
+    text-decoration: none;
+}                                                            
+
+                                                                    /*Contact_Us*/
+
+#page2{
+     background: url(9.jpg) no-repeat;
+     background-size: cover;
+}
+
+.cont{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont .info{
+    max-width: 800px;
+    text-align: center;
+}
+
+.cont .info h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: blue;
+}
+
+.cont .info p{
+    font-weight: bold;
+    color: rgb(253, 6, 6);
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.box .write{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box .write .pic{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.box .write .pic .check{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(19, 201, 233);
+    font-weight: 300;
+    flex-direction: column;
+}
+
+.box .write .pic .check h3{
+    font-weight: 800;
+    color: rgb(247, 243, 55);
+}
+
+.create{
+    width: 40%;
+    padding: 80px;
+    background: palevioletred;
+    transform: translate();
+}
+
+.create h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: blue;
+}
+
+.create .itemin{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.create .itemin input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.create .itemin textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.create .itemin button{
+    width: 100px;
+    background-color: blue;
+    color: bisque;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+                                                         /*Navigation_Icon*/
+
+.newicon{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: -200px;
+    height: 100%;
+    background: black;
+    border-right: 2px solid black;
+    opacity: 0;
+    margin-top: 0;
+}
+
+.newicon--open{
+    left: 0;
+    opacity: 1;
+}
+
+.myicon{
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    border-bottom: 0.5px solid salmon;
+}
+
+.myicon .fiticon{
+    margin-right: 8px;
+}
+
+.myicon :active{
+    background-color: gray;
+}
+
+                                                     /*about_us*/
+
+#page3{
+        background: url(2.jpg) no-repeat;
+        background-size: 1400px 400px;                                                                                        
+}
+
+
+.us{
+    padding-top: 10%;
+    justify-content: center;
+
+}
+
+.about h1{
+    color: white;
+    padding-top: 6%;
+    font-size: 80px;
+    padding-left: 38%;
+}
+
+                                                        /*Package_Page*/
+
+
+#page4{
+    background: url(3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.pack1 h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size :50px;
+    text-align: center;
+    margin-top: 0;
+    color: rgb(151, 10, 76);
+    
+} 
+
+.pack1 h2{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size :30px;
+    text-align: center;
+    margin-top: 0;
+    color: rgb(151, 10, 76);
+    
+} 
+                                               
+.image1{
+    padding-left: 70px;
+    width: 400px;
+    height: 310px;
+    padding-top: 50px;
+}
+
+.image2{
+    padding-left: 100px;
+    width: 460px;
+    height: 310px;
+    padding-top: 50px;
+}
+
+.image3{
+    padding-left: 100px;
+    width: 440px;
+    height: 310px;
+    padding-top: 50px;
+}
+
+.image4{
+    padding-left: 70px;
+    width: 400px;
+    height: 350px;
+    padding-top: 100px;
+}
+
+.image5{
+    padding-left: 100px;
+    width: 460px;
+    height: 350px;
+    padding-top: 100px;
+}
+
+.image6{
+    padding-left: 100px;
+    width: 440px;
+    height: 350px;
+    padding-top: 100px;
+}
+
+.image7{
+    padding-left: 70px;
+    width: 400px;
+    height: 350px;
+    padding-top: 100px;
+   
+}
+
+.image8{
+    padding-left: 100px;
+    width: 460px;
+    height: 350px;
+    padding-top: 100px;
+    
+}
+
+.image9{
+    padding-left: 100px;
+    width: 440px;
+    height: 350px;
+    padding-top: 100px;
+   
+}
+
+                                                    /*Drop Down in package page*/
+
+ select{
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    background: rgb(247, 56, 56);
+    border-radius: 2px solid white;
+    margin-left: 35%;
+}
+
+select{
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+                                    /*central_Province*/
+
+#page5{
+        background: url(CP.PNG) no-repeat;
+        background-size: 1400px 400px;
+                                        
+}
+
+.task1 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    padding-top: 30%;
+} 
+
+.detail1 .top1{
+    color: brown;
+    background-color: yellow;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.detail1 .pic1{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+    
+
+}
+
+.detail1 .para1{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.detail1 .top2{
+    color: brown;
+    background-color: yellow;
+    text-align: center;
+    font-size: 30px;
+}
+
+.detail1 .pic2{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+.detail1 .para2{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.detail1 .top3{
+    color: brown;
+    background-color: yellow;
+    text-align: center;
+    font-size: 30px;
+}
+
+.detail1 .pic3{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+.detail1 .para3{
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h3{
+    padding-left: 10px;
+}
+
+                                    /*eastern_province*/
+
+#page6{
+      background: url(EP.PNG) no-repeat;
+      background-size: 1400px 400px;                                                                     
+}     
+  
+.task2 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    padding-top: 30%;
+} 
+
+.detail2 h2{
+    color: rgb(3, 1, 80);
+    background-color: rgb(20, 248, 218);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.detail2 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.detail2 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+h3{
+    padding-left: 10px;
+}
+
+                                    /*northern_province*/
+
+#page7{
+        background: url(NP.PNG) no-repeat;
+        background-size: 1400px 400px;                                                                     
+}     
+
+.task4{
+    padding-left: 10px;
+    text-align: justify;
+    padding-top: 30%;
+    padding-right: 10px;
+}
+
+.detail4 h2{
+    color: rgb(3, 59, 3);
+    background-color: rgb(68, 248, 122);
+    text-align: center;
+    font-size: 30px;
+}
+
+.detail4 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+.detail4 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3{
+    padding-left: 10px;
+}
+
+                                    /*north central province*/
+
+#page8{
+    background: url(NCP.PNG) no-repeat;
+    background-size: 1400px 400px;                                                                     
+}     
+
+.task3{
+    padding-left: 10px;
+    text-align: justify;
+    padding-top: 30%;
+    padding-right: 10px;
+}
+
+.detail3 h2{
+    color: rgb(231, 4, 99);
+    background-color: rgb(248, 136, 192);
+    text-align: center;
+    font-size: 30px;
+}
+
+.detail3 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+.detail3 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3{
+    padding-left: 10px;
+}
+                                        /*uva_province*/
+
+#page9{
+    background: url(UP.PNG) no-repeat;
+    background-size: 1400px 400px;                                                                     
+} 
+
+.task9{
+    padding-left: 10px;
+    text-align: justify;
+    padding-top: 30%;
+    padding-right: 10px;
+}
+
+.detail9 h2{
+    color: rgb(231, 95, 4);
+    background-color: rgb(248, 203, 136);
+    text-align: center;
+    font-size: 30px;
+}
+
+.detail9 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+.detail9 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h3{
+    padding-left: 10px;
+}
+  
+                                        /*SABARAGAMUVA_province*/
+
+#page10{
+    background: url(SP.PNG) no-repeat;
+    background-size: 1400px 400px;                                                                     
+}     
+
+.task6 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    padding-top: 25%;
+} 
+
+.detail6 h2{
+    color: rgb(2, 2, 3);
+    background-color: rgb(165, 164, 164);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.detail6 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.detail6 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+h3{
+    padding-left: 10px;
+}
+
+                                        /*SOUTHERN_province*/
+
+#page11{
+    background: url(SUTH.PNG) no-repeat;
+    background-size: 1400px 400px;                                                                     
+}     
+
+.task7 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    padding-top: 30%;
+} 
+
+.detail7 h2{
+    color: rgb(20, 65, 20);
+    background-color: rgb(132, 255, 60);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.detail7 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.detail7 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+h3{
+    padding-left: 10px;
+}
+                                        /*WESTERN_province*/
+
+#page12{
+    background: url(WP.PNG) no-repeat;
+    background-size: 1400px 400px;                                                                     
+} 
+
+.task8 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    padding-top: 30%;
+} 
+
+.detail8 h2{
+    color: rgb(85, 4, 65);
+    background-color: rgb(195, 105, 247);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.detail8 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.detail8 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+h3{
+    padding-left: 10px;
+}
+
+                                         /*NORTH_WETERN_province*/
+
+#page13{
+    background: url(NWP.PNG) no-repeat;
+    background-size: 1400px 400px;                                                                     
+}     
+
+.task5 p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    padding-top: 30%;
+} 
+
+.detail5 h2{
+    color: rgb(3, 1, 80);
+    background-color: rgb(20, 248, 218);
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.detail5 p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.detail5 img{
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+h3{
+    padding-left: 10px;
+}
+
+                                /*Footer*/
+
+.foot1{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+} 
+
+.foot2{
+    display: flex;
+}
+
+.foot2 ul{
+    display: flex;
+    padding: 10px;
+    width: 350px;
+    height: 30px;
+    margin: auto;
+     
+}
+
+.foot3{
+    list-style: none;
+}
+
+.foot3 a{
+    padding: 10px 20px;
+    font-size: 35px;
+}
+
+.foot4{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.foot6{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(34, 34, 34);
+}
+
+                                /*To-Do List*/
+
+#page25{
+    background: url(todo.jpg) no-repeat;
+    background-size: cover;
+}   
+
+.make .turn1{
+    width: 300px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 38%;
+    
+}
+
+.make .turn2{
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(216, 4, 4);
+    
+}
+
+.make .turn3{
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(4, 63, 97);
+}
+
+.make .turn4{
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(2, 97, 38);
+}
+
+#todo{
+    margin-top: 10px;
+}  
+
+.make h1{
+    text-align: center;
+    color: maroon;
+}
+
+.make h4{
+    text-align: center;
+    color: maroon;
+}
+
+                        /*About general Information on Sri Lanka Linked to home page discover more button*/
+
+#page38{
+    background: url(SRI.PNG) no-repeat;
+    background-size: 1400px 400px;  
+                                                                                        
+}
+
+#one, #three, #five, #seven, #nine, #eleven{
+    color: rgb(3, 3, 131);
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#two, #four, #six, #eight, #ten, #twelve{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+#one{
+    padding-top: 400px;
+}
+
+.ab{
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+#four{
+    padding-top: 20px;
+    
+}
+
+#five{
+    padding-top: 50px;
+}
+
+.ef{
+    width: 400px;
+    height: 250px;
+    float: right;
+}
+
+#eight{
+    padding-top: 20px;
+}
+
+.cd{
+    width: 350px;
+    height: 200px;
+    float: left;
+}
+
+#eleven{
+    padding-top: 30px;
+
+}
+
+#ten{
+    padding-top: 10px;
+}
+
+.hi{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#twelve{
+    padding-top: 20px;
+}

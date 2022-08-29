@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="Project.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body id="page25">
+         <!---------------Button_used_to_go_back_and_used_to_show_the_navbar_again------------->
+    <button onclick="navbar()" style="float: right;"><img src="yellow.png"></button>
+    <div class="newicon">
+        <a href="Project.html" class="myicon">
+            <span class="fiticon">Home</span>
+        </a>
+        <a href="Package.html" class="myicon">
+            <span class="fiticon">Packages</span>
+        </a>
+        <a href="Todo.html" class="myicon">
+            <span class="fiticon">To-Do List</span>
+        </a>
+        <a href="contact.html" class="myicon">
+            <span class="fiticon">Contact</span>
+        </a>
+        <a href="About Us.html" class="myicon">
+            <span class="fiticon">About</span>
+        </a>
+        <a href="login.html" class="myicon">
+            <span class="fiticon">Login</span>
+        </a>
+    </div>
+        <div id="todo">
+            <div class="make">
+                <h1>TO-DO LIST</h1>
+                <h4>Plane as you wish and keep as a reminder</h4>
+            <div v-if="!isEditing">    
+                <input class="turn1" type="text" v-model="todo">
+                <input class="turn2" type="submit" value="Create" @click="storeTodo()">
+            </div>
+            <div v-else>
+                <input class="turn1" type="text" v-model="todo">
+                <input class="turn2" type="submit" value="Update" @click="updateTodo()">
+            </div>    
+                <ol>
+                    <li v-for="(todo, index) in todos">
+                        {{ todo }}
+                        <button class="turn3" @click="editTodo(index, todo)">Edit</button>
+                        <button class="turn4" @click="deleteTodo(index)">Remove</button>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <script src="Project.js"></script>
+    </body>
+</html>
